@@ -8,19 +8,11 @@
     <script src="js/sayhello.js"></script>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1 id="top">Hello World!</h1>
     <nav>
-        <a href="/">Home</a>
-        <a href="/tags.html">Tags</a>
-        <a href="http://www.google.com">Google</a>
-        <a href="http://www.danguinn.com">Dan Guinn</a>
-        <a href="http://www.danguinn.com#teaching">Dan Guinn Teaching</a>
-        <a href="#bottom">Go to bottom</a>
-        <a href="/images.html">Images</a>
+        <iframe class="menu_iframe" src="includes/menu.html" frameborder="0"></iframe>
     </nav>
-
-    
-
+    <main>
     <form action="">
         <label for="name">Name</label>
         <input id="name" value="evan">
@@ -59,6 +51,10 @@
             
             Shank filet mignon kielbasa, meatloaf spare ribs picanha short ribs pork beef. Shankle bresaola pork chop, pig spare ribs beef ball tip tri-tip rump leberkas tongue chuck. Leberkas shank venison chuck ham jowl meatball. Capicola buffalo frankfurter, pork belly swine meatloaf leberkas beef pork loin tri-tip turkey tongue jowl. Pork loin short ribs fatback, andouille hamburger biltong pork chop. Prosciutto pork tri-tip pancetta, porchetta corned beef leberkas swine ground round filet mignon.
     </p>
-    <p id="bottom">This is the bottom </p>
+    </main>
+    <footer id="bottom">This is the bottom
+        <a href="#top">Go to top</a>
+    </footer>
+
 </body>
 </html>
