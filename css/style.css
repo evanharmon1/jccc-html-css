@@ -43,3 +43,58 @@ nav a {
     width: 100%;
     height: 25px;
 }
+
+/* CSS Gallery */
+
+#gallery {
+    border: solid 1px;
+}
+
+#gallery .thumb {
+    width: 100px;
+    height: 75px;
+}
+
+#gallery ul {
+    list-style: none;
+}
+
+#gallery span {
+    display: none;
+}
+
+#gallery a {
+    text-decoration: none;
+}
+
+#gallery a:hover span {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+/* Animations */
+#photo1 {
+    width: 300px;
+}
+
+#photo2 {
+    width: 100px;
+}
+
+.photoAnim:hover {
+    transform: translateX(40px) scale(2) rotate(20deg) skew(15deg, 4deg);
+    transition: transform;
+    transition-duration: 2s;
+    transition-delay: 50ms;
+    transition-timing-function: ease; /* ease-in or ease-out */
+}
+
+.photoAnim {
+    transform: translateX(0px) scale(1) rotate(0deg) skew(0deg, 0deg);
+    transition: transform;
+    transition-duration: 2s;
+    transition-delay: 50ms;
+    transition-timing-function: ease;
+}
